@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="col-sm-2">
+        <div class="card">
+            <div class="card-body">
+                <ul [ngClass]="tempClass==='err'?'error':tempClass==='com'?'complete':''" id="videoList"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <div class="card">
+            <div class="card-body">
+                <ul [ngClass]="tempClass1==='err'?'error':tempClass1==='com'?'complete':''" id="videoList1"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <div class="card">
+            <div class="card-body">
+               {{varObservable}}
+               <span [ngClass]="tempClass2==='err'?'error':tempClass2==='com'?'complete':''">{{tempClass2==='err'?'error':tempClass2==='com'?'complete':'Running'}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <div class="card">
+            <div class="card-body">
+                <ul id="videoList3"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <div class="card">
+            <div class="card-body">
+                <ul id="videoList4"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+
